@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wj.clubmdm.weber.application.RollCallUploadController">
+   <children>
+      <TableView layoutX="906.0" layoutY="18.0" prefHeight="170.0" prefWidth="258.0">
+        <columns>
+          <TableColumn prefWidth="101.0" text="點名日期" />
+          <TableColumn prefWidth="155.0" text="檔案匯入時間" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnChoiceRollCallFile" layoutX="817.0" layoutY="57.0" mnemonicParsing="false" onAction="#choiceFile" prefHeight="29.0" prefWidth="56.0" text="選擇">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfFilePath" layoutX="242.0" layoutY="57.0" prefHeight="29.0" prefWidth="565.0" />
+      <Button fx:id="btnCheckData" layoutX="128.0" layoutY="96.0" mnemonicParsing="false" onAction="#checkRollCallFile" text="檢查檔案資料">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="128.0" layoutY="171.0" text="點名資料確認">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView layoutX="128.0" layoutY="202.0" prefHeight="578.0" prefWidth="1036.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="序號" />
+            <TableColumn prefWidth="90.0" text="學員編號" />
+            <TableColumn prefWidth="114.0" text="姓名" />
+            <TableColumn prefWidth="100.0" text="上課分部" />
+            <TableColumn prefWidth="106.0" text="類別" />
+            <TableColumn prefWidth="141.0" text="程度" />
+            <TableColumn prefWidth="91.0" text="點名時間" />
+            <TableColumn prefWidth="189.0" text="特色課程" />
+            <TableColumn prefWidth="129.0" text="操作" />
+         </columns>
+      </TableView>
+      <Button layoutX="128.0" layoutY="790.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="1036.0" text="確認匯入點名檔">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dpChoiceRollCallDate" layoutX="242.0" layoutY="24.0" prefHeight="23.0" prefWidth="123.0" />
+      <Label layoutX="128.0" layoutY="25.0" text="點名日期">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="61.0" text="選擇點名檔">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

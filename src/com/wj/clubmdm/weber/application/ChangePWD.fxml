@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wj.clubmdm.weber.application.ChangePWDController">
+   <children>
+      <Label layoutX="601.0" layoutY="120.0" text="修改密碼">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQuestion" alignment="CENTER" layoutX="446.0" layoutY="269.0" prefHeight="28.0" prefWidth="455.0" textFill="BLUE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfAnswer" layoutX="552.0" layoutY="307.0" prefHeight="36.0" prefWidth="243.0" promptText="請輸入答案">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pfPWD" layoutX="553.0" layoutY="407.0" prefHeight="36.0" prefWidth="243.0" promptText="請輸入新密碼">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="pfPWDAgain" layoutX="553.0" layoutY="453.0" prefHeight="36.0" prefWidth="243.0" promptText="請再輸入一次新密碼">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnSubmit" layoutX="615.0" layoutY="499.0" mnemonicParsing="false" onAction="#chkSubmit" prefHeight="36.0" prefWidth="116.0" text="送出">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelMsg" alignment="CENTER" layoutX="446.0" layoutY="491.0" prefHeight="28.0" prefWidth="455.0" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
